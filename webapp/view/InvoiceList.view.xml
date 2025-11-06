@@ -13,6 +13,25 @@
                     width="50%"
                     search=".onFilterInvoices"
                 />
+                <ComboBox 
+                    id="statusComboBox"
+                    width="20%" 
+                    selectionChange=".onSelectionChange"
+                    
+                    items="{ 
+                        path: 'allStatuses>/statusCollection'
+                        }"
+                    >
+                    <core:Item 
+                    key="{allStatuses>key}"
+                    core:require="{ 
+                    Formatter: 'ui5/walkthrough/model/formatter'
+                    }"
+                    text="{
+                            path: 'allStatuses>text',
+                            formatter: 'Formatter.statusText.bind($controller)'
+						}"/>
+                </ComboBox> 
             </Toolbar>
         </headerToolbar>
     <Table
