@@ -15,6 +15,7 @@
                 />
                 <ComboBox 
                     id="statusComboBox"
+                    selectedKey="All"
                     width="20%" 
                     selectionChange=".onSelectionChange"
                     
