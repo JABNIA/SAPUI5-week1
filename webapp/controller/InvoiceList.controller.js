@@ -1,9 +1,9 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/ui/model/json/JSONModel",
-    "../model/formatter",
     "sap/ui/model/Filter",
     "sap/ui/model/FilterOperator",
+    "../model/formatter"
 ], (Controller, JSONModel, Filter, FilterOperator, Formatter) => {
     "use strict"
 
